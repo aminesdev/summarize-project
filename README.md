@@ -41,6 +41,7 @@ Run from cmd or PowerShell:
 ```bash
 summarize-project .
 ```
+---
 
 ## Usage
 
@@ -69,7 +70,7 @@ Output:
 ```bash
 ✓ Output: __summary.md
 ```
-
+---
 ## Notes
 - Binary files, media, and common dependencies (e.g. node_modules, venv, dist) are ignored automatically.
 - Ignored patterns can be customized in the configuration file.
