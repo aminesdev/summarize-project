@@ -28,7 +28,7 @@ Now you can run it anywhere with:
 ```bash
 summarize-project .
 ```
-Windows
+### Windows
 
 - Download summarize-project-win.exe
     
@@ -42,7 +42,7 @@ Run from cmd or PowerShell:
 summarize-project .
 ```
 
-Usage
+## Usage
 
 Summarize a project directory:
 ```bash
@@ -70,6 +70,6 @@ Output:
 ✓ Output: __summary.md
 ```
 
-Notes
+## Notes
 - Binary files, media, and common dependencies (e.g. node_modules, venv, dist) are ignored automatically.
 - Ignored patterns can be customized in the configuration file.
