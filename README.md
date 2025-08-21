@@ -22,50 +22,54 @@ Download the file for your system from the Releases section:
 ```bash
 chmod +x summarize-project-linux
 sudo mv summarize-project-linux /usr/local/bin/summarize-project
+```
 
 Now you can run it anywhere with:
-
+```bash
 summarize-project .
-
+```
 Windows
 
-    Download summarize-project-win.exe
+- Download summarize-project-win.exe
+    
+- Rename it to summarize-project.exe (optional)
+    
+- Move it somewhere in your PATH (e.g., C:\Windows\System32 or add a custom folder to PATH)
+    
+Run from cmd or PowerShell:
 
-    Rename it to summarize-project.exe (optional)
-
-    Move it somewhere in your PATH (e.g., C:\Windows\System32 or add a custom folder to PATH)
-
-    Run from cmd or PowerShell:
-
+```bash
 summarize-project .
+```
 
 Usage
 
 Summarize a project directory:
+```bash
 
 summarize-project /path/to/project
+```
 
 This will generate a file named __summary.md containing a structured overview of the project.
 Why use it?
 
-    Quickly understand large codebases.
+- Share codebase context with AI tools without manual splitting
+- Automatically adjusts to the input size limits of different assistants
+- Skips binaries, media, and dependency folders
+- Generate lightweight docs for onboarding or reviews
 
-    Generate project documentation with minimal effort.
+Save time when working with large projects
 
-    Share clean summaries with teammates or AI tools.
-
-    Save time when onboarding or reviewing projects.
-
-Example
-
+Example :
+```bash
 summarize-project .
+```
 
 Output:
-
+```bash
 ✓ Output: __summary.md
+```
 
 Notes
-
-    Binary files, media, and common dependencies (e.g. node_modules, venv, dist) are ignored automatically.
-
-    Ignored patterns can be customized in the configuration file.
+- Binary files, media, and common dependencies (e.g. node_modules, venv, dist) are ignored automatically.
+- Ignored patterns can be customized in the configuration file.
